@@ -2,6 +2,9 @@ import React from 'react'
 import meta from '../../../assets/img/meta.jpeg'
 import { AiOutlineWhatsApp } from 'react-icons/ai'
 import './Home.css'
+import Course from '../courses/Course'
+import Community from '../community/Community'
+import Plans from '../plans/Plans'
 
 function Home() {
     const reactSite = () => {
@@ -12,7 +15,9 @@ function Home() {
         window.open("https://www.youtube.com/watch?v=wIyHSOugGGw")
     }
 
-  return (
+    return (
+      
+    <>
       <section>
           <div className="conatiner">
               <div className="home-container">
@@ -45,7 +50,12 @@ function Home() {
                   </div>
               </div>
           </div>
-    </section>
+      </section>
+      
+            <Course />
+            <Community />
+            <Plans/>
+    </>
   )
 }
 

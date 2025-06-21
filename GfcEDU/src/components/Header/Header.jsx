@@ -1,6 +1,8 @@
 import React from 'react'
 import logo from '../../assets/img/logo.png';
 import './Header.css';
+import { Link } from 'react-router-dom';
+
 function Header() {
 
     const nav_titles = [
@@ -8,10 +10,10 @@ function Header() {
             path:'/',display:'Home' 
         },
         {
-            path:'/',display:'Service'
+            path:'/services',display:'Service'
         },
         {
-            path:'/',display:'Course'
+            path:'/courses',display:'Course'
         },
         {
             path:'/',display:'About Us'
@@ -29,7 +31,7 @@ function Header() {
       <div className='navigation'>
         <ul className='menu'>
           {nav_titles.map((item, index) => (
-            <li className='nav-item'>{item.display}</li>
+            <li className='nav-item'><Link to={item.path}>{item.display}</Link></li>
           ))}
         </ul>
       </div>

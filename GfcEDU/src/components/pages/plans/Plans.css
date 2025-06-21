@@ -1,0 +1,121 @@
+.pricing_top {
+  text-align: center;
+}
+
+.pricing_top h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.pricing_top p {
+  font-size: 1.1rem;
+  color: var(--heading-color);
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+
+.pricing_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 2rem;
+}
+
+.pricing_item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pricing_item {
+
+  width: 90%; /* make the pricing box full width */
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center content like Join button */
+  height: 500px;
+  margin-bottom: 60px;
+}
+
+
+.pricing_card-top {
+   padding: 30px;
+  border-bottom: 1px solid #d3cef2;
+  text-align: center;
+  width: 90%;
+}
+.pricing_card-top h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.9rem;
+}
+.pricing_card-top .pricing {
+    font-size: 1.4rem;
+}
+.pricing_card-top .pricing span {
+    font-size: 1rem;
+    color: #666;
+}
+.pricing_item .services {
+    padding: 30px;
+}
+.pricing_item .services ul li {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    columns: #666;
+    line-height: 28px;
+}
+.pricing_item .services ul li span i {
+    font-size: 0.7rem;
+}
+.services {
+    text-align: center;
+}
+.services button {
+    margin-top: 50px;
+}
+.pricing_item-02 .pricing_card-top {
+    background: var(--primary-color);
+    border-radius: 5px 5px 0px 0px;
+}
+.pricing_item-02 .pricing_card-top h2 {
+    color: #fff;
+    font-weight: 500;
+}
+.pricing_item-02 .pricing_card-top h2 span {
+    color: rgba(255, .255, .255, .0.788);
+}
+.pricing_item-02 .services ul li span i {
+    color: var(--primary-color);
+}
+
+.pricing_item {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 5px;
+  width: 33%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* ✅ This centers the Join button horizontally */
+  padding: 20px;
+}
+
+.register-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #a8041a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.register-btn:hover {
+  background-color: #a8041a;
+}
