@@ -1,7 +1,12 @@
 // import React from "react";/*  */
 import "./Footer.css";
 import footer from "../../assets/img/footer.png";
+import { Link } from "react-router-dom";
 function Footer() {
+  const handclick = () => {
+    window.scrollTo(0.0)
+  }
+  
   return (
     <div>
       <footer className="footer">
@@ -23,18 +28,16 @@ function Footer() {
             <div className="footer_box">
               <h4 className="footer_titles">Company</h4>
               <ul className="footer_links">
-                <li><a href="">our programs</a></li>
-                <li><a href="">our plan</a></li>
-                <li><a href="">become member</a></li>
+                <li><a href="/courses">our programs</a></li>
+                <li><a href="/services">our plan</a></li>
               </ul>
             </div>
 
             <div className="footer_box">
               <h4 className="footer_titles">Quick Link</h4>
               <ul className="footer_links">
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Support</a></li>
+                <li><a href="/About" onClick={handclick}>About Us</a></li>
+                <li><Link to='/Contact' onClick={handclick}>Contact</Link></li>
               </ul>
             </div>
           </div>

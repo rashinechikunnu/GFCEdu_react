@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/img/logo.png';
+import edu from '../../assets/img/edu.png';
 import './Header.css';
 import { Link } from 'react-router-dom';
 
@@ -16,7 +16,7 @@ function Header() {
             path:'/courses',display:'Course'
         },
         {
-            path:'/',display:'About Us'
+            path:'/About',display:'About Us'
         },
     ]
 
@@ -25,7 +25,7 @@ function Header() {
   <div className="container">
     <div className="nav_container">
       <div className="logo-img">
-        <img src={logo} alt="Logo" />
+        <img src={edu} alt="Logo" />
         <h2>GFC EDU</h2>
       </div>
       <div className='navigation'>

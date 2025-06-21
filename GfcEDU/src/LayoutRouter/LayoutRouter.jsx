@@ -5,6 +5,8 @@ import Plans from '../components/pages/plans/Plans'
 import Course from '../components/pages/courses/Course'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
+import AboutUs from '../components/pages/AboutUs/AboutUs'
+import ContactUs from '../components/pages/ContactUs/ContactUs'
 
 function LayoutRouter() {
     return (
@@ -14,6 +16,8 @@ function LayoutRouter() {
                 <Route path='/' element={<Home/>} />
                 <Route path='/services' element={<Plans/>} />
                 <Route path='/courses' element={<Course/>} />
+                <Route path='/About' element={<AboutUs/>} />
+                <Route path='/Contact' element={<ContactUs/>} />
             </Routes>
             <Footer />
       </Router>
